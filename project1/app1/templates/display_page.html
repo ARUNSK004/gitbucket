@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Page</title>
+</head>
+<body>
+    <h1>Input Data:</h1>
+    <ul>
+        {% for data in input_data %}
+            <li>{{ data.input_text }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

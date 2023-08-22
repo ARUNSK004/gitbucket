@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" type="imag/x-icon" href="{% static 'gitlogo.png' %}" sizes="100px">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  position: fixed;
+  background:transparent;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  position: relative;
+  left: -4em;
+}
+.menu .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  position: relative;
+  left: -5em;
+}
+.menu ul {
+  display: inline-flex;
+}
+.menu ul li {
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child {
+  margin-left: 0px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover {
+  background: #fff;
+  color: black;
+}
+
+.img::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.menu .hr1{
+  border: none;
+  height: 5px;
+  background-color:red; 
+  margin: 20px;
+}
+.sk
+{
+    position: relative;
+    top:4em;
+
+}
+.container{
+  position: relative;
+  background-color:transparent;
+  border-color: #fff;
+  top:7em;
+}
+hr{
+
+  color: grey;
+}
+    </style>
+  </head>
+  <body style="background-color:rgb(0, 0, 0,0.9)">
+    <nav>
+      <div class="menu">
+        <a href="gitbucket.html"><img src="{% static 'gitlogo.png' %}" height="100px" width="100px"></a>
+        <div class="logo">
+          <a href="#">Git Bucket</a>
+        </div>
+        <ul>
+          <li><a href="#">Pull request</a></li>
+          <li><a href="repositories">Repositories</a></li>
+          <li><a href="project">Project</a></li>
+          <li><a href="#">People</a></li>
+          <li><a href="#">create</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="img"></div>
+    
+    </div>
+    <div class="sk">
+      <br>
+      <hr style="color:grey"> 
+    </div>
+    <div class="container">
+        <h2 style="color:#fff">Recent Repositories</h1>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h2 style="color:white">Pull request</h2>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <br>
+      </div>
+    
+  </body>
+</html>

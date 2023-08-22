@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Sign up</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="imag/x-icon" href="{% static 'gitlogo.png' %}" sizes="100px">
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASsAAACoCAMAAACPKThEAAAAKlBMVEUeHh4KCgogICAcHBwHBwcSEhIMDAwWFhYZGRkTExMYGBgDAwMjIyMAAADQtvE8AAADfklEQVR4nO3c3W6jMBCGYXv8S6D3f7vrwZiQBNjsSWHl91GltLQH6JM9jMHUGAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAJSL14+oT+Q/UrISsviDN1Sdya1KDMk7Vbw2J7RKtUSlY65W1IekBwtolyWpGq/JDIqo9mpR9R1pvdKJJ/sipyfPvrz7Jm9Akgv8cVG0mBrJ6EhMPR5WKRFXp5S8eDaplaEVGltIIToOqI4vuoXAiYecCuBcWZKhJpfRR32Op6ynVaTiQlRG3DhxxOsK8fs0fJaAy6mQJzhGWLJfAMK8GXQgpz8dzGqLG48oUXcK8+EwvJ3mscyyVoOYDLRKpB8oSsWY15t7DasPKHtajVs96H1jiXCvn4TCr0Eq967tkSViy8vYwq/WyeBhnH9YgxsdhVktFK3n2nVWbgv5szKxjz/3eid2PpFauTkpR68D0WvmL53Y3a92Ox8u90ju0a2XXBWuTwuF6T2SbaL/I6nvrZfC7rA77ih6sWQ1nt1zISq1Znc8usjIvWZ31TpGsNrPLn/ZXf10z9kDSF23ms2Htuhdd1zjWH/eiZv2brtc4Zs3haH6VjmFY/+aXz+1mloKlaYTpcwdR+XkKvpX2vlvR5zYGv/90WczmMWvu+hmh1OeoyQ1zXiFv9vPpt4/wTCp23TGo+SIX244G72MwbWtteNmNFfu+IzMTHTE+r1U+1Ykmz36ima4+1cvJw9eWYf6M3rQKL/KSlO/+kZeZH09EvYdcxtE4bu8lP5fM9i83mfshVsOaS9TLnZlnVlrLpO8HXot6P/1zI4xsNrCdrRf7oisdb3VL++T25+CFJ3cvS5c174yJm8PrTQjLOwErMS6OH8vClpWPna+Zt+bdRHWF/Dqu/HIFZAPkq2XlF9/G1cge5E/ztj6/3epYhlqZfrzwtUdTebwcSbxxCeCWZK1Oy/uo7QDt1RuRFJLkIFm0pic3vwmXBsr7juhTCM650ciPk3oXdArBsGp+U1Y5o7ZSQyzNuhuHbFOKk3eDjSwG34n7EW9TDsaL8THY9LBi8xCm4123/RrzFFOOmtWPmUpWZVzlULLKV5/Z7chjLBVriGJtLsXKJuejz7qiZuH8Sdz8zytcvQLq2zhawZxw93iXLDnp612G3uqc1A7U1febGU8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgH/0B5YpDsO0mJPsAAAAAElFTkSuQmCC");
+}
+
+form{
+    height: 650px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+    </style>
+</head>
+<body>
+	<form action='addproject/' method="post">
+        {% csrf_token %}
+        <h3>Project</h3>
+
+        <label>Project Name</label>
+        <input type="text" placeholder="Enter Name" name="projectname">
+
+        <label>Key</label>
+        <input type="text" placeholder="Enter key" name="key">
+        <label>Description</label>
+        <input type="text" placeholder="Enter Description" name="description">
+        <button type="submit">create project</button>
+        
+    </form>
+</body>
+</html>
